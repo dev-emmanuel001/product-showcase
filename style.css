@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    font-family: sans-serif;
+}
+
+header{
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 5px gray;
+    padding-left: 2rem;
+          
+}
+
+main{
+    padding: 2rem;
+}
+
+.products{
+    display: grid;
+    gap: 5rem;
+}
+
+.product{
+    border-radius: 1rem;
+    background-color: #ebebeb ;
+    overflow: hidden;
+}
+
+.product-image-box{
+    height: 14rem;
+}
+
+.product-image-box img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-content-box {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .product-price {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-price p {
+    font-weight: 700;
+  }
+  
+  .product-price button {
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 2rem;
+    font-size: 0.8rem;
+  }
+
+  footer {
+    padding: 2rem;
+    background-color: #ebebeb;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* ============================================ */
+
+/* Responsive Styles for Tablet Screens */
+@media screen and (min-width: 768px) {
+    .products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    footer {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    footer section {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  /* ============================================ */
+
+/* Responsive Styles for Desktop Screens */
+@media screen and (min-width: 1024px) {
+    .products {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+    
